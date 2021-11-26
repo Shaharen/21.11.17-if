@@ -1,34 +1,34 @@
-package Á¶°Ç¹®;
+package ì¡°ê±´ë¬¸;
 
 import java.util.Scanner;
 
 public class Exam_0001 {
 
 	public static void main(String[] args) {
-		// ¿ø Áß½É, ¹İÁö¸§ ½Ç¼ö·Î ÀÔ·Â ¹Ş°í ´Ù¸¥ Á¡ (x,y)°¡ ¿ø ³»ºÎ¿¡ ÀÖ´Â°¡?
+		// ì› ì¤‘ì‹¬, ë°˜ì§€ë¦„ ì‹¤ìˆ˜ë¡œ ì…ë ¥ ë°›ê³  ë‹¤ë¥¸ ì  (x,y)ê°€ ì› ë‚´ë¶€ì— ìˆëŠ”ê°€?
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â >> ");
+		System.out.print("ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ >> ");
 		double x = sc.nextDouble();
 		double y = sc.nextDouble();
 		double r = sc.nextDouble();
 
-		System.out.println("Á¡ ÀÔ·Â >> ");
+		System.out.println("ì  ì…ë ¥ >> ");
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 
 		boolean isCheck1 = (x - a) * (x - a) + (y - b) * (y - b) == r * r;
 		boolean isCheck2 = (x - a) * (x - a) + (y - b) * (y - b) < r * r;
-		boolean isCheck3 = (x - a) * (x - a) + (y - b) * (y - b) > r * r;
-
+		
 		if (isCheck1) {
-			System.out.println("(a,b)´Â ¿ø À§¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("(a,b)ëŠ” ì› ìœ„ì— ìˆìŠµë‹ˆë‹¤.");
 		} else if (isCheck2) {
-			System.out.println("(a,b)´Â ¿ø ¾È¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("(a,b)ëŠ” ì› ì•ˆì— ìˆìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("(a,b)´Â ¿ø ¹Û¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("(a,b)ëŠ” ì› ë°–ì— ìˆìŠµë‹ˆë‹¤.");
 		}
 
 	}
 
 }
+ 
